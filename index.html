@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="gracjan_acab">
+    <title>Global Hustler</title>
+    <link rel="shortcut icon" href="public/assets/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/Fekir.css">
+</head>
+<body>
+   <section class="scroller scroller-front">
+    <video autoplay loop muted>
+        <source src="public/assets/logo_small.mp4">
+    </video>
+   </section>
+   <section class="scroller scroller-clothes">
+
+        <section class="scroller-clothes__main" >
+            <img src="public/assets/cover.jpg" class="scroller-clothes__main-img" name="cover">
+
+            <section class="scroller-clothes__all">
+                <img src="public/assets/cover.jpg" class="scroller-clothes__all-img" name="cover">
+                <img src="public/assets/cover2.png" class="scroller-clothes__all-img" name="cover">
+            </section>
+
+            <h1 class="scroller-clothes__title">Album "Global Hustler"</h1>
+            <h2 class="scroller-clothes__description">44.99 zl</h2>
+
+            <section class="scroller-clothes__buy">
+                <button class="scroller-clothes__btn" name="Album">
+                    <img src="public/assets/AK47.png" class="scroller-clothes__btn-img">
+                    <img src="public/assets/AK47.png" class="scroller-clothes__btn-img">
+                    Dodaj do koszyka
+                </button>
+            </section>
+        </section>
+        
+        <section class="scroller-clothes__main" >
+            <img src="public/assets/komin.png" class="scroller-clothes__main-img" name="balaclava">
+            
+            <section class="scroller-clothes__all">
+                <img src="public/assets/komin.png" class="scroller-clothes__all-img" name="balaclava">
+                <img src="public/assets/balaclava.jpg" class="scroller-clothes__all-img" name="balaclava">
+                <img src="public/assets/balaclava2.jpg" class="scroller-clothes__all-img" name="balaclava">
+            </section>
+            
+            <h1 class="scroller-clothes__title">Kominiarka "Global Hustler"</h1>
+            <h2 class="scroller-clothes__description">74.99 zl</h2>
+
+            <section class="scroller-clothes__buy">
+                <button class="scroller-clothes__btn" name="Kominiarka">
+                    <img src="public/assets/AK47.png" class="scroller-clothes__btn-img">
+                    <img src="public/assets/AK47.png" class="scroller-clothes__btn-img">
+                    Dodaj do koszyka
+                </button>
+            </section>
+
+        </section>
+
+        <section class="scroller-clothes__main">
+            <img src="public/assets/box.png" class="scroller-clothes__main-img"> 
+            <h1 class="scroller-clothes__title">Hustlerski Box</h1>
+            <h2 class="scroller-clothes__description">114.99 zl</h2>
+
+            <section class="scroller-clothes__buy">
+                <button class="scroller-clothes__btn" name="Box">
+                    <img src="public/assets/AK47.png" class="scroller-clothes__btn-img">
+                    <img src="public/assets/AK47.png" class="scroller-clothes__btn-img">
+                    Dodaj do koszyka
+                </button>
+            </section>
+
+        </section>
+        
+   </section>
+   <section class="scroller scroller-checkout">
+        <section class="scroller-checkout__cart">
+            
+        </section>
+        <p class="scroller-checkout__text">Koszt: <span class="scroller-checkout__price">0 zł</span></p>
+        <section class="scroller-checkout__checkout">
+            <h1 class="title-checkout">Checkout</h1>
+            <form id="order" action="https://platnosc.hotpay.pl/" method="post" class="scroller-checkout__form">
+                <input type="hidden" name="SEKRET" value="L0V1UEw1MjZyTms0RUpGcUR2MzhlWDhkSkNoNHo1ZTMzSjMzWEU4bDlVWT0," required>
+                <input type="hidden" name="KWOTA" value="" required>
+                <input type="hidden" name="NAZWA_USLUGI" value="" required>
+                <input type="hidden" name="ID_ZAMOWIENIA" value="" required>
+                <input type="hidden" name="ADRES_WWW" value="https://globalhustler.pl/" required>
+                <input type="text" name="data" placeholder="Imie i Nazwisko" class="scroller-checkout__input" id="name"required>
+                <input type="text" name="data" placeholder="Ulica" class="scroller-checkout__input" required>
+                <input type="text" name="data" placeholder="Kod pocztowy" class="scroller-checkout__input" required>
+                <input type="text" name="data" placeholder="Miasto" class="scroller-checkout__input" required>
+                <input type="text" name="data" placeholder="Telefon" class="scroller-checkout__input" required>
+                <input type="text" name="EMAIL" placeholder="E-mail" class="scroller-checkout__input" required>
+                <h1 class="title-checkout">Opcje wysyłki</h1>
+                <section class="scroller-checkout__ship">
+                    <span>
+                        <input type="radio" class="scroller-checkout__checkbox" id="inpost" name="ship" required> <label for="inpost" id="code-label"><sub class="scroller-checkout__checkbox-sub">Paczkomat <span class="scroller-checkout__checkbox-href">InPost</span></sub></label>
+                    </span>
+                    <span>
+                        <input type="radio" class="scroller-checkout__checkbox" id="poczta" name="ship" required> <label for="poczta" id="code-label"><sub class="scroller-checkout__checkbox-sub">Poczta <span class="scroller-checkout__checkbox-href">Polska</span></sub></label>
+                    </span>
+                </section>
+                <input type="text" name="data" placeholder="Nazwa paczkoamtu (np. BYD01HO)" class="scroller-checkout__input" id="code">
+                <!-- <input type="checkbox" class="scroller-checkout__checkbox" required> <sub class="scroller-checkout__checkbox-sub">Przeczytałem/am i akceptuję <a href="#" class="scroller-checkout__checkbox-href">Regulamin</a></sub> -->
+                <input type="hidden" name="DANE_OSOBOWE" value="">
+                <button type="submit" class="scroller-checkout__btn">
+                    <img src="public/assets/AK47.png" class="scroller-checkout__btn-img">
+                    <img src="public/assets/AK47.png" class="scroller-checkout__btn-img">
+                    Płatność
+                </button>
+            </form>
+        </section>
+   </section>
+   <section class="size">
+    <table class="size__table">
+        <thead class="size__table-thead">
+            <tr>
+                <th class="size__table-th"></th>
+                <th class="size__table-th">Obwód klatki piersiowej</th>
+                <th class="size__table-th">Długość całkowita</th>
+            </tr>
+        </thead>
+        <tbody class="size__table-tbody">
+
+            <tr class="size__table-tbody-tr">
+                <th class="size__table-th">S</th>
+                <td class="size__table-td">49cm</td>
+                <td class="size__table-td">64cm</td>
+            </tr>
+
+            <tr class="size__table-tbody-tr">
+                <th class="size__table-th">M</th>
+                <td class="size__table-td">50cm</td>
+                <td class="size__table-td">71cm</td>
+            </tr>
+
+            <tr class="size__table-tbody-tr">
+                <th class="size__table-th">L</th>
+                <td class="size__table-td">55cm</td>
+                <td class="size__table-td">72cm</td>
+            </tr>
+
+            <tr class="size__table-tbody-tr">
+                <th class="size__table-th">XL</th>
+                <td class="size__table-td">58cm</td>
+                <td class="size__table-td">73.5cm</td>
+            </tr>
+        </tbody>
+    </table>
+    <span class="fa-solid fa-xmark size__close"></span>
+   </section>
+   <section class="background">
+        <section class="background__visibility"></section>
+        <video class="background__video" autoplay loop muted>
+            <source src="public/assets/video.mp4">
+        </video>
+   </section>
+   <script src="js/Cart.js"></script>
+   <script src="js/Form.js"></script>
+   <script src="js/Images.js"></script>
+</body>
+</html>

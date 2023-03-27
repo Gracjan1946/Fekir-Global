@@ -1,0 +1,323 @@
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./scss/style.scss ***!
+  \**********************************************************************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: "Teko", sans-serif;
+  color: white;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 100%;
+  }
+  40% {
+    opacity: 0%;
+  }
+  60% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.scroller {
+  position: relative;
+  height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.title-checkout {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 15px 0;
+}
+
+.scroller-front video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+}
+@media screen and (min-width: 800px) {
+  .scroller-front video {
+    width: 80%;
+  }
+}
+
+.scroller-clothes {
+  padding: 25px;
+}
+.scroller-clothes__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin: 15px 0 5px;
+}
+@media screen and (min-width: 1366px) {
+  .scroller-clothes__title {
+    font-size: 2rem;
+  }
+}
+.scroller-clothes__description {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.scroller-clothes__main-img {
+  display: block;
+  height: 55vh;
+  margin: 30px auto 25px;
+}
+@media screen and (min-width: 500px) {
+  .scroller-clothes__main-img {
+    height: 57vh;
+  }
+}
+.scroller-clothes__all {
+  display: flex;
+  justify-content: Center;
+}
+.scroller-clothes__all-img {
+  height: 15vh;
+  margin: 0 15px;
+}
+@media screen and (min-width: 500px) {
+  .scroller-clothes__all-img {
+    height: 17vh;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .scroller-clothes__all-img {
+    height: 18vh;
+  }
+}
+.scroller-clothes__btn {
+  position: relative;
+  display: block;
+  margin: 5px auto;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.scroller-clothes__btn:hover {
+  border-color: red;
+  color: red;
+}
+.scroller-clothes__btn:hover .scroller-clothes__btn-img {
+  right: -25%;
+}
+.scroller-clothes__btn:hover .scroller-clothes__btn-img:nth-child(2) {
+  left: -25%;
+}
+.scroller-clothes__select {
+  display: block;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  margin: 15px auto;
+  padding: 5px 10px;
+  outline: none;
+  border-radius: 5px;
+}
+.scroller-clothes__select option {
+  background-color: #000;
+}
+.scroller-clothes__btn-img {
+  position: absolute;
+  top: 0%;
+  right: -60%;
+  transform: rotate(10deg);
+  height: 50px;
+  transition: 0.2s linear;
+}
+.scroller-clothes__btn-img:nth-child(2) {
+  transform: rotate(-10deg) rotateY(180deg);
+  left: -60%;
+}
+
+.scroller-checkout__btn {
+  position: relative;
+  display: block;
+  margin: 20px auto;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.scroller-checkout__btn:hover {
+  border-color: red;
+  color: red;
+}
+.scroller-checkout__btn:hover .scroller-checkout__btn-img {
+  right: -45%;
+}
+.scroller-checkout__btn:hover .scroller-checkout__btn-img:nth-child(2) {
+  left: -45%;
+}
+.scroller-checkout__btn-img {
+  position: absolute;
+  top: 0%;
+  right: -80%;
+  transform: rotate(10deg);
+  height: 50px;
+  transition: 0.2s linear;
+}
+.scroller-checkout__btn-img:nth-child(2) {
+  transform: rotate(-10deg) rotateY(180deg);
+  left: -80%;
+}
+.scroller-checkout__form {
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 800px) {
+  .scroller-checkout__form {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .scroller-checkout__form {
+    width: 40%;
+  }
+}
+.scroller-checkout__input {
+  display: block;
+  font-family: "Teko", sans-serif;
+  width: 80%;
+  margin: 15px auto;
+  padding: 5px 25px;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  border: 1.5px solid white;
+  border-radius: 5px;
+  outline: none;
+}
+.scroller-checkout__input:focus {
+  border-color: red;
+}
+.scroller-checkout__checkbox {
+  height: 15px;
+}
+.scroller-checkout__checkbox-href {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.scroller-checkout__cart {
+  display: flex;
+  margin: 15px auto 25px;
+  flex-direction: column;
+  width: 30%;
+}
+@media screen and (min-width: 800px) {
+  .scroller-checkout__cart {
+    width: 20%;
+  }
+}
+.scroller-checkout__cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 500px) {
+  .scroller-checkout__cart-item {
+    justify-content: space-evenly;
+  }
+}
+.scroller-checkout__size {
+  width: 20%;
+}
+.scroller-checkout__btn-quantity {
+  background-color: transparent;
+  text-align: center;
+  height: 20px;
+  width: 20px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.scroller-checkout__btn-quantity:hover {
+  color: red;
+  border-color: red;
+}
+.scroller-checkout__text {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 150%;
+}
